@@ -17,7 +17,13 @@ interface ChatState {
 }
 
 export const useChatStore = create<ChatState>((set) => ({
-  messages: [],
+  messages: [
+     {
+    id: "1",
+    role: "assistant",
+    content: "¡Hola!, soy UFPS BOT estoy aquí para ayudarte, no dudes en preguntar lo que necesites.",
+  }
+  ],
   userRole: null,
   setUserRole: (role) => set({ userRole: role }),
   addMessage: (msg) =>

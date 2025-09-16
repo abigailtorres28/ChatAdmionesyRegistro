@@ -42,8 +42,11 @@ const ChatWidget = () => {
                         {!userRole ? (
                             <RoleSelector />
                         ) : (
-                            <div className="p-4">Aquí irá el chat una vez seleccione su rol</div>
+                            <>
+                                <ChatHistory />
+                            </>
                         )}
+
                     </div>
                     {userRole && <MessageInput />}
                 </div>
