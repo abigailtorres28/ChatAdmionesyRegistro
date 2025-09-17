@@ -3,7 +3,7 @@ interface ChatBubbleProps {
   isOpen: boolean;
 }
 
-const ChatBubble = ({ onClick, isOpen }: ChatBubbleProps) => {
+const ChatBubble = ({ onClick}: ChatBubbleProps) => {
   return (
     <button
       onClick={onClick}
